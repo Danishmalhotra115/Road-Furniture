@@ -1,0 +1,17 @@
+a{transition: transform .19s cubic-bezier(0.55, 0, 0.55, 0.2) , color .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    transform-origin: center; 
+    display: inline-block; 
+    }
+ a:hover {
+      color: rgb(233, 212, 5);
+      transform:  scale(1.2) !important;
+    }
+    a:active{
+        color: rgb(224, 207, 49);
+        transition-duration: 0s;
+        transform: scale(1) !important;
+    }
+    .logopng{
+        width: auto !important;
+        height:50px !important;
+    }
