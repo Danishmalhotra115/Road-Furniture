@@ -1,0 +1,22 @@
+.feature-image img{
+    height:100% !important;
+    width:100% !important;
+    object-fit: cover;
+}
+h2{
+    color:rgb(239, 208, 16)
+}
+@media screen and (max-width:767px){
+    .about-us-features{
+        flex-direction: column-reverse !important;
+        justify-content:center;
+    }
+    .feature-image{
+        width:100% !important;
+    }
+    .feature-description{
+        width:100% !important;
+        text-align: left;
+        
+    }
+}

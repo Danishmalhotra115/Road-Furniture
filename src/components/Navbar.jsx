@@ -3,15 +3,16 @@ import { Menu, X } from 'lucide-react'
 import "./Navbar.css"
 import logo from './logo.png'
 import { FaRegBell } from 'react-icons/fa'
+import About from "./About us/About"
 
 const menuItems = [
   {
     name: 'Home',
-    href: '#',
+    href: '/',
   },
   {
     name: 'About',
-    href: '#',
+    href: './About us/About',
   },
   {
     name: 'Products',
@@ -45,7 +46,7 @@ function Navbar() {
 
   return (
     <div className={`fixed z-10 w-full ${isScrolled ? 'bg-gray-100 bg-opacity-20 backdrop-blur-md' : 'bg-gray-100'} transition duration-300`}>
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <div className=" navbar mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span>
             <img
@@ -55,7 +56,7 @@ function Navbar() {
             />
           </span>
         </div>
-        <div className="hidden lg:block">
+        <div className="navbar-links hidden lg:block">
           <ul className="inline-flex space-x-8">
             {menuItems.map((item) => (
               <li key={item.name}>
