@@ -16,4 +16,7 @@
   .width{
     width: 98.7vw !important;
   }
+  .typewriter-container {
+    z-index: 10;
+  }
   

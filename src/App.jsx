@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import Carousel from "./components/Carousel"
 import Navbar from './components/Navbar'
 import About from "./components/About us/About"
@@ -7,9 +6,8 @@ import Products from './components/Products/Products'
 import Contact from './components/Contact/Contact'
 import Footer  from './Footer/Footer'
 import * as React from 'react'
+import Roadsign from './components/Road Sign/Roadsign'
 
-// 1. import `ChakraProvider` component
-import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +22,9 @@ let slides=["https://cdn.pixabay.com/photo/2020/03/09/08/44/road-construction-49
      <Products/>
    
   <Contact/>
-  <Footer/>
+  
+  <Roadsign/>
+
   
     </>
   )
